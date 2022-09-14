@@ -13,7 +13,7 @@ export default function Home() {
 
       <Header />
 
-      <main>
+      <main className='relative h-[200vh]'>
         <Landing />
       </main>
     </div>
