@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "apple-redesign"
-  },
   "api": {
     "projectId": "wjnxg7jg",
-    "dataset": "products"
+    "dataset": "production"
+  },
+  "project": {
+    "name": "apple-redesign"
   },
   "plugins": [
     "@sanity/base",
