@@ -8,7 +8,7 @@ type Data = {
 const query = groq`*[_type == "category"] {
     _id,
     ...
-}`
+}| order(title desc)`
 
 export default async function handler(
     req: NextApiRequest,

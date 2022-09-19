@@ -8,7 +8,7 @@ type Data = {
 const query = groq`*[_type == "product"] {
     _id,
     ...
-} | order(_createdAt asc)`
+}| order(price desc)` 
 
 export default async function handler(
     req: NextApiRequest,
