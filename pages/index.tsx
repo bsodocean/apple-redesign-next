@@ -1,12 +1,13 @@
+import React from "react";
 import { Tab } from "@headlessui/react";
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
-import React from "react";
 import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
 import Product from "../components/Product";
+import Basket from "../components/Basket";
 
 interface Props {
   categories: Category[];
@@ -30,6 +31,7 @@ const Home = ({ categories, products }: Props) => {
       </Head>
 
       <Header />
+      <Basket />
 
       <main className='relative h-[210vh] bg-[#E7ECEE]'>
         <Landing />
