@@ -6,5 +6,5 @@ export const fetchProducts = async () => {
     const data = await res.json();
     const products: Product[] = data.products;
   
-    return (products);
+    return products;
   };
